@@ -10,8 +10,8 @@ import {EventosES6, EventosES7, MasSobreEventos} from './components/Eventos';
 import {Padre} from './components/ComunicacionComponentes';
 import CicloVida from './components/CicloVidaComponentes';
 import AjaxApis from './components/PeticionAsincronicaAjaxApi';
-import HooksContador from './components/HooksContador';
-
+import HooksContador from './components/HooksUseStateContador';
+import HooksScroll from './components/HooksUseEfectScroll';
 
 function App() {
   return (
@@ -55,6 +55,8 @@ function App() {
         <AjaxApis/>
         <hr/>
         <HooksContador titulo= "funciones"/>
+        <hr/>
+        <HooksScroll/>
         <hr/>
       </section>
       
