@@ -78,6 +78,7 @@ function Boton(props) {
     )
 }
 
+//https://es.reactjs.org/docs/events.html
 export class MasSobreEventos extends Component {
     handleClick = (e, mensaje) => {
         console.log(e);

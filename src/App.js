@@ -9,6 +9,8 @@ import RenderizadoElementos from './components/RenderizadoElementos';
 import {EventosES6, EventosES7, MasSobreEventos} from './components/Eventos';
 import {Padre} from './components/ComunicacionComponentes';
 import CicloVida from './components/CicloVidaComponentes';
+import AjaxApis from './components/PeticionAsincronicaAjaxApi';
+import HooksContador from './components/HooksContador';
 
 
 function App() {
@@ -49,6 +51,11 @@ function App() {
         <Padre/>
         <hr/>
         <CicloVida/>
+        <hr/>
+        <AjaxApis/>
+        <hr/>
+        <HooksContador titulo= "funciones"/>
+        <hr/>
       </section>
       
       </header>
