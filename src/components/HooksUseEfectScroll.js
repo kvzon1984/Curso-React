@@ -4,9 +4,10 @@ export default function HooksScroll(){
     const [scrollY, setScrollY] = useState(0)
 
     useEffect(() => {
-        // Al pasarle el parametro ,[scrollY] hacemos que cada vez que esa variable tenga un cambio 
+        // Al pasarle el parametro .[scrollY] hacemos que cada vez que esa variable tenga un cambio 
         // se ejecute el codigo dentro de la funcion
-        console.log("Moviendo el scroll");
+
+        // console.log("Moviendo el scroll");
         const detectarScroll = ()=> setScrollY(window.pageYOffset)
         window.addEventListener("scroll", detectarScroll)
 
@@ -15,21 +16,22 @@ export default function HooksScroll(){
     },[scrollY])
 
     useEffect(() => {
-        // Al dejarlo vacio o no incuir el useEffect solo se ejecuta en la etapa de montaje 
+        // Al dejarlo vacio o no incuir el .[] useEffect solo se ejecuta en la etapa de montaje 
         console.log("Fase de Montaje");
         
     },[])
 
     useEffect(() => {
-        // al no tener el segundo parametro ,[] el useEffect se va a comoportar como un 
+        // al no tener el segundo parametro .[] el useEffect se va a comoportar como un 
         //moutedDidUpdate cada vez que se renderiza ejecutara el codigo dentro de la funcion
-        console.log("Fase de Actualizacion");
+
+        // console.log("Fase de Actualizacion");
         
     })
 
     useEffect(() => {
-        // Al hacer que el useEffect retorne una funcion le digo a React que lo que
-        // quiero  ue se comporte com fase de desmontaje
+        // Al hacer que el useEffect retorne una funcion ( return () => {} ) le digo a React que lo que
+        // quiero es que se comporte com fase de desmontaje
         return () => {
             console.log("Fase de Desmontaje"); 
         }
