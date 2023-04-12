@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 
-function Pokemon({avatar, name}) {
+function Pokemon({avatar, name, index}) {
     return(
         <figure>
             <img src={avatar} alt={name}/>
-            <figcaption>{name}</figcaption>
+            <figcaption>{name} {index}</figcaption>
         </figure>
     )
 }
@@ -63,8 +63,8 @@ export default function HooksAjaxApi (){
         <>
             <h2>Hooks Peticiones Ajax Apis</h2>
             { pokemons.length === 0 ? (<h3>Cargando...</h3>)
-            : (pokemons.map(pokemon => (
-                <Pokemon key={pokemon.id} name={pokemon.name} avatar={pokemon.avatar}/>
+            : (pokemons.map((pokemon, index) => (
+                <Pokemon key={pokemon.index} name={pokemon.name} avatar={pokemon.avatar}/>
             )))}
         </>
     )

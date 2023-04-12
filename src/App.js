@@ -14,6 +14,7 @@ import HooksContador from './components/HooksUseStateContador';
 import HooksScroll from './components/HooksUseEfectScroll';
 import RelojHooks from './components/HooksReloj';
 import HooksAjaxApi from './components/HooksAjaxApi';
+import HooksPersonalizados from './components/HooksPersonalizados';
 
 function App() {
   return (
@@ -63,6 +64,8 @@ function App() {
         <RelojHooks/>
         <hr/>
         <HooksAjaxApi/>
+        <hr/>
+        <HooksPersonalizados/>
         <hr/>
       </section>
       
