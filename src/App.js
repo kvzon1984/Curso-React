@@ -12,7 +12,7 @@ import CicloVida from './components/CicloVidaComponentes';
 import AjaxApis from './components/PeticionAsincronicaAjaxApi';
 import HooksContador from './components/HooksUseStateContador';
 import HooksScroll from './components/HooksUseEfectScroll';
-import RelojHooks from './components/HoksReloj';
+import RelojHooks from './components/HooksReloj';
 import HooksAjaxApi from './components/HooksAjaxApi';
 
 function App() {
