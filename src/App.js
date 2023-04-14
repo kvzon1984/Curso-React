@@ -15,60 +15,65 @@ import HooksScroll from './components/HooksUseEfectScroll';
 import RelojHooks from './components/HooksReloj';
 import HooksAjaxApi from './components/HooksAjaxApi';
 import HooksPersonalizados from './components/HooksPersonalizados';
+import Style from './components/PasandoStyles';
+import ReutilizandoComponentes from './components/ReutilizadoComponentes';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <section>
-      <img src={logo} className="App-logo" alt="logo" />
-      </section>
-      <section>
-        <ComponenteClass msg="Componente de clase"/>
-        <hr/>
-        <ComponenteFuncion msg="Componente de funcion"/>
-        <hr/>
-        <Propiedades 
-        cadena="Esto es una cadena de texto"
-        numero={25}
-        boolean={true}
-        arreglo={[1,2,3,4,5]}
-        objeto={{'nombre':'Isaac Vega', 'edad': 38, 'nacionalidad': 'Chilena'}}
-        elementoReact={<i>elemento react</i>}
-        funcion = {(num) => num * num}
-        componenteReact = {<ComponenteClass msg="Soy un componente pasado como prop"/>}
-        />
-        <hr/>
-        <Estado/>
-        <hr/>
-        <RenderizadoCondicional/>
-        <hr/>
-        <RenderizadoElementos/>
-        <hr/>
-        <EventosES6/>
-        <hr/>
-        <EventosES7/>
-        <hr/>
-        <MasSobreEventos/>
-        <hr/>
-        <Padre/>
-        <hr/>
-        <CicloVida/>
-        <hr/>
-        <AjaxApis/>
-        <hr/>
-        <HooksContador titulo= "funciones"/>
-        <hr/>
-        <HooksScroll/>
-        <hr/>
-        <RelojHooks/>
-        <hr/>
-        <HooksAjaxApi/>
-        <hr/>
-        <HooksPersonalizados/>
-        <hr/>
-      </section>
-      
+        <section>
+          <img src={logo} className="App-logo" alt="logo" />
+        </section>
+        <section>
+          <ComponenteClass msg="Componente de clase"/>
+          <hr/>
+          <ComponenteFuncion msg="Componente de funcion"/>
+          <hr/>
+          <Propiedades 
+          cadena="Esto es una cadena de texto"
+          numero={25}
+          boolean={true}
+          arreglo={[1,2,3,4,5]}
+          objeto={{'nombre':'Isaac Vega', 'edad': 38, 'nacionalidad': 'Chilena'}}
+          elementoReact={<i>elemento react</i>}
+          funcion = {(num) => num * num}
+          componenteReact = {<ComponenteClass msg="Soy un componente pasado como prop"/>}
+          />
+          <hr/>
+          <Estado/>
+          <hr/>
+          <RenderizadoCondicional/>
+          <hr/>
+          <RenderizadoElementos/>
+          <hr/>
+          <EventosES6/>
+          <hr/>
+          <EventosES7/>
+          <hr/>
+          <MasSobreEventos/>
+          <hr/>
+          <Padre/>
+          <hr/>
+          <CicloVida/>
+          <hr/>
+          <AjaxApis/>
+          <hr/>
+          <HooksContador titulo= "funciones"/>
+          <hr/>
+          <HooksScroll/>
+          <hr/>
+          <RelojHooks/>
+          <hr/>
+          <HooksAjaxApi/>
+          <hr/>
+          <HooksPersonalizados/>
+          <hr/>
+          <Style/>
+          <hr/>
+          <ReutilizandoComponentes/>
+          <hr/>
+        </section>      
       </header>
     </div>
   );

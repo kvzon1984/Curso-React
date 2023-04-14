@@ -14,16 +14,19 @@ function EstadoAHijo(props){
 //El estado puede ir definido en el contructor
 
 export default class Estado extends Component {
+    // state={
+    //     contador:0
+    // }
     constructor(props){
         super(props)
         this.state={
             contador:0
         }
-        // setInterval(() => {
-        //     this.setState({
-        //         contador: this.state.contador + 1
-        //     })
-        // }, 1000)
+        setInterval(() => {
+            this.setState({
+                contador: this.state.contador + 1
+            })
+        }, 1000)
 
     }
 

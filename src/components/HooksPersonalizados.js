@@ -1,6 +1,8 @@
 import React from 'react';
 import { useFetch } from "../hooks/useFetch";
 
+// CustomHooks
+
 export default function HooksPersonalizados() {
     let url = 'https://pokeapi.co/api/v2/pokemon/'
     url = 'https://jsonplaceholder.typicode.com/users'
