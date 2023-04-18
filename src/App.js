@@ -17,6 +17,9 @@ import HooksAjaxApi from './components/HooksAjaxApi';
 import HooksPersonalizados from './components/HooksPersonalizados';
 import Style from './components/PasandoStyles';
 import ReutilizandoComponentes from './components/ReutilizadoComponentes';
+import HookUseReducer from './components/HookUseReducer';
+import HookUseRef from './components/HookUseRef';
+import ComponenteNoControladosFrom from './components/ComponenteNoControladosFrom';
 
 function App() {
   return (
@@ -73,7 +76,13 @@ function App() {
           <hr/>
           <ReutilizandoComponentes/>
           <hr/>
-        </section>      
+          <HookUseReducer/>
+          <hr/>
+          <HookUseRef/>
+          <hr/>
+          <ComponenteNoControladosFrom/>
+          <hr/>
+        </section>
       </header>
     </div>
   );
