@@ -45,7 +45,7 @@ export default class CicloVida extends Component {
     }
 
 
-    // componentDidMount Se ejecuta con el Constructor 
+    // componentDidMount Se ejecuta con el Constructor y no recibe ningun parametro
     componentDidMount(){
         console.log(1,'El componente ya esta en el DOM')
     }

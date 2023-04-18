@@ -12,6 +12,7 @@ export const useFetch = (url) => {
                 
                 if(!res.ok){
                     // throw es como el return de los errores
+                    // eslint-disable-next-line no-throw-literal
                     throw {
                         err:true,
                         status: res.status,
