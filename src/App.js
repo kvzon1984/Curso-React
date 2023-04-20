@@ -19,7 +19,10 @@ import Style from './components/PasandoStyles';
 import ReutilizandoComponentes from './components/ReutilizadoComponentes';
 import HookUseReducer from './components/HookUseReducer';
 import HookUseRef from './components/HookUseRef';
-import ComponenteNoControladosFrom from './components/ComponenteNoControladosFrom';
+import ComponenteNoControladosFrom from './components/FormularioGetDataNoControlado';
+import ComponenteNoControladosFrom2 from './components/FormularioGetDataNoControlado2';
+import ComponenteNoControladosFrom3 from './components/FormularioGetDataNoControlado3';
+import ComponentesControladosFrom from './components/FormularioGetDataControlados';
 
 function App() {
   return (
@@ -81,6 +84,12 @@ function App() {
           <HookUseRef/>
           <hr/>
           <ComponenteNoControladosFrom/>
+          <hr/>
+          <ComponenteNoControladosFrom2/>
+          <hr/>
+          <ComponenteNoControladosFrom3/>
+          <hr/>
+          <ComponentesControladosFrom/>
           <hr/>
         </section>
       </header>

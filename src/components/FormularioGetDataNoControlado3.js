@@ -1,4 +1,4 @@
-const ComponenteNoControladosFrom = () => {
+const ComponenteNoControladosFrom3 = () => {
 
     const submit = (e) => {
         e.preventDefault()
@@ -11,26 +11,30 @@ const ComponenteNoControladosFrom = () => {
 
     return (
         <>
-            <h1>Componente no controlados formularios</h1>
+            <h1>Componente no controlados formularios 3</h1>
 
             <form onSubmit={submit}>
                 <label>Usuario:
-                <input
-                    type="text"
-                    name="username"
-                />
+                    <input
+                        type="text"
+                        name="username"
+                    />
                 </label>
                 <label>Edad:
                     <input
-                    type="number"
-                    name="age"
+                        type="number"
+                        name="age"
                     />
-                    </label>
-                    <input type="submit" />
+                </label>
+                <input
+                    type="file"
+                    name="archivo"
+                />
+                <input type="submit" value='Enviar' />
             </form>
 
         </>
     )
 }
 
-export default ComponenteNoControladosFrom
+export default ComponenteNoControladosFrom3
