@@ -12,9 +12,16 @@ const ComponentesControladosFrom = () => {
 
     // MAS DE UN CAMPO EN EL FORMULARIO
 
-    const [ valor, setValor ] = useState({ nombre: 'Ingrese Nombre', edad: '', select: '' })
+    const [ valor, setValor ] = useState({ 
+        nombre: 'Ingrese Nombre',
+        edad: '',
+        select: '',
+        check: false,
+        estadoRadio: 'feliz'
+    })
 
-    const handleChange = (e) => {
+    const handleChange = ({ target }) => {
+        console.log('*******',target.type, target.checked);
         // setValor({
         //     ...valor,
         //     [e.target.name]: e.target.value
@@ -22,7 +29,7 @@ const ComponentesControladosFrom = () => {
         setValor((state) =>(
             {
                 ...state,
-                [e.target.name]: e.target.value
+                [target.name]: target.type === 'checkbox' ? target.checked : target.value
             }
         ))
     }
@@ -75,7 +82,44 @@ const ComponentesControladosFrom = () => {
                         <option value='Arica'>Arica</option>
                     </select>
                 </label>
-
+                <label>CheckBox:
+                    <input type="checkbox" checked={valor.check} name="check" onChange={handleChange}>
+                    </input>
+                </label>
+                {/* Opcion 1 de radio button */}
+                {/* <div onChange={handleChange}>
+                    <label>RadioButton:
+                        <input type="radio" value='feliz' name="estadoRadio"/> Feliz
+                        <input type="radio" value='triste' name="estadoRadio"/> Triste
+                        <input type="radio" value='enojado' name="estadoRadio"/> Enojado
+                    </label>
+                </div> */}
+                {/*Opcion 2 de radio button */}
+                <div>
+                    <label>RadioButton:
+                        <input
+                            onChange={handleChange}
+                            checked = {valor.estadoRadio === 'feliz'}
+                            type="radio"
+                            value='feliz'
+                            name="estadoRadio"
+                            /> Feliz
+                        <input
+                            onChange={handleChange}
+                            checked = {valor.estadoRadio === 'triste'}
+                            type="radio"
+                            value='triste'
+                            name="estadoRadio"
+                            /> Triste
+                        <input
+                            onChange={handleChange}
+                            checked = {valor.estadoRadio === 'enojado'}
+                            type="radio"
+                            value='enojado'
+                            name="estadoRadio"
+                            /> Enojado
+                    </label>
+                </div>
                 <input type="submit" value='Enviar' />
             </div>
 
