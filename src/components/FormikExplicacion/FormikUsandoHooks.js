@@ -42,6 +42,7 @@ const FormikUsandoHooks = () => {
                 <label>Nombre</label>
                 <input
                     type='text'
+                    //! onBlur es para validar si el foco esta o no en la propiedad asi validamos el validate
                     //! formik.getFieldProps nos entrega un objeto que contiene la propiedad de name, onChange, onBlur, value
                     { ... formik.getFieldProps('name')}
                 />

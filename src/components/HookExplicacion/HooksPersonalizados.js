@@ -1,5 +1,5 @@
 import React from 'react';
-import { useFetch } from "../hooks/useFetch";
+import { useFetch } from "../../hooks/useFetch";
 
 //* CustomHooks
 
@@ -24,8 +24,8 @@ export default function HooksPersonalizados() {
             <h3>
                 <mark>
                     {JSON.stringify(error)}
-                </mark> 
+                </mark>
             </h3>
         </>
-    ) 
+    )
 }
