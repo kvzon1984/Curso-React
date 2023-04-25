@@ -1,7 +1,7 @@
 import React from "react";
 import PropType from "prop-types";
 
-//Al no ser una Clase 'class' no es nesesario el this.props
+//* Al no ser una Clase 'class' no es nesesario el this.props
 
 export default function Propiedades (props){
     return(
@@ -22,8 +22,8 @@ export default function Propiedades (props){
         </div>
     )
 }
-// Propiedades tiene un metodo llamando defaultProps y puedo crear propiedades
-// para pasar dentro del componente, no desde afuera
+//* Propiedades tiene un metodo llamando defaultProps y puedo crear propiedades
+//* para pasar dentro del componente, no desde afuera
 Propiedades.defaultProps = {
     porDefecto: 'Propiedad default'
 }

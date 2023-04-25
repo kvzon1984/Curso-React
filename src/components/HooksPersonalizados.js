@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFetch } from "../hooks/useFetch";
 
-// CustomHooks
+//* CustomHooks
 
 export default function HooksPersonalizados() {
     let url = 'https://pokeapi.co/api/v2/pokemon/'

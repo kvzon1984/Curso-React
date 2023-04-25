@@ -1,8 +1,8 @@
 import React from "react";
 
-// Si la destruccturacion de Components React.Component
+//* Si la destruccturacion de Components React.Component
 
-//Funcion declarada
+//* Funcion declarada
 
 // function ComponenteFuncion(props) {
 
@@ -10,7 +10,7 @@ import React from "react";
 
 // }
 
-//Funcion expresada
+//* Funcion expresada
 
 const ComponenteFuncion = (props) => <h2>{props.msg}</h2>
 

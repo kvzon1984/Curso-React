@@ -23,6 +23,8 @@ import ComponenteNoControladosFrom from './components/FormularioGetDataNoControl
 import ComponenteNoControladosFrom2 from './components/FormularioGetDataNoControlado2';
 import ComponenteNoControladosFrom3 from './components/FormularioGetDataNoControlado3';
 import ComponentesControladosFrom from './components/FormularioGetDataControlados';
+import FormikUsandoHooks from './components/FormikUsandoHooks';
+import FormikUsandoComponentes from './components/FormikUsandoComponentes';
 
 function App() {
   return (
@@ -36,7 +38,7 @@ function App() {
           <hr/>
           <ComponenteFuncion msg="Componente de funcion"/>
           <hr/>
-          <Propiedades 
+          <Propiedades
           cadena="Esto es una cadena de texto"
           numero={25}
           boolean={true}
@@ -90,6 +92,10 @@ function App() {
           <ComponenteNoControladosFrom3/>
           <hr/>
           <ComponentesControladosFrom/>
+          <hr/>
+          <FormikUsandoHooks/>
+          <hr/>
+          <FormikUsandoComponentes/>
           <hr/>
         </section>
       </header>

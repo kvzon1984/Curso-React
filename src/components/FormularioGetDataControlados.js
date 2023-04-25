@@ -3,14 +3,14 @@ import BasicAlertsError from "../helpers/AlertError"
 
 const ComponentesControladosFrom = () => {
 
-    // UN SOLO CAMPO EN EL FORMULARIO
+    //* UN SOLO CAMPO EN EL FORMULARIO
     // const [ value, setValue ] = useState('')
 
     // const handleChange = (e) => {
     //     setValue(e.target.value)
     // }
 
-    // MAS DE UN CAMPO EN EL FORMULARIO
+    //* MAS DE UN CAMPO EN EL FORMULARIO
 
     const [ valor, setValor ] = useState({ 
         nombre: 'Ingrese Nombre',
@@ -21,7 +21,7 @@ const ComponentesControladosFrom = () => {
     })
 
     const handleChange = ({ target }) => {
-        console.log('*******',target.type, target.checked);
+        // console.log('*******',target.type, target.checked);
         // setValor({
         //     ...valor,
         //     [e.target.name]: e.target.value

@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 
-// Hay tes fases:
+//* Hay tes fases:
 
-// Montanje:
-//     Constructor()
-//     render()
-//     componentDidMount()
+//* Montanje:
+//*     Constructor()
+//*     render()
+//*     componentDidMount()
 
-// Actualizacion:
-//     render()
-//     componentDidUpdate()
+//* Actualizacion:
+//*     render()
+//*     componentDidUpdate()
 
-// Desmontaje:
-//      componentWillUnmount()
+//* Desmontaje:
+//*      componentWillUnmount()
 
 class Reloj extends Component {
     constructor(props) {
@@ -45,12 +45,12 @@ export default class CicloVida extends Component {
     }
 
 
-    // componentDidMount Se ejecuta con el Constructor y no recibe ningun parametro
+    //* componentDidMount Se ejecuta con el Constructor y no recibe ningun parametro
     componentDidMount(){
         console.log(1,'El componente ya esta en el DOM')
     }
 
-    // componentDidUpdate Se ejecsuta cuando el componente ya no existe
+    //* componentDidUpdate Se ejecsuta cuando el componente ya no existe
     componentDidUpdate(prevProps, prevState){
         console.log(2, 'El estado o las props del componente han cambiado');
         console.log(prevProps);

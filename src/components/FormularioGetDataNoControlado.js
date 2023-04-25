@@ -2,8 +2,8 @@ const ComponenteNoControladosFrom = () => {
 
     const submit = (e) => {
         e.preventDefault()
-        const data = Array.from(new FormData(e.target))// Array.from toma los campor del formulario y crea un array
-        console.log(Object.fromEntries(data)); // Object.fromEntries crea un objeto a partir de un Array
+        const data = Array.from(new FormData(e.target))//! Array.from toma los campor del formulario y crea un array
+        console.log(Object.fromEntries(data)); //! Object.fromEntries crea un objeto a partir de un Array
         const { username, age } = Object.fromEntries(data)
         console.log(username);
         console.log(age);

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export class Padre extends Component{
 
-    // Variable de Estado
+    //* Variable de Estado
     state = {
         contador: 0,
     }

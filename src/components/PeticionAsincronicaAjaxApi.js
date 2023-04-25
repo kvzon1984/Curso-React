@@ -18,7 +18,7 @@ export default class AjaxApis extends Component {
     state = {
         pokemons: []
     }
-    // En el componentDidMount es donde se realizan las peticiones fetch o axios 
+    //* En el componentDidMount es donde se realizan las peticiones fetch o axios
     componentDidMount() {
         let url = 'https://pokeapi.co/api/v2/pokemon/'
         fetch(url)
@@ -29,7 +29,6 @@ export default class AjaxApis extends Component {
                 fetch(pokemon.url)
                 .then(res => res.json())
                 .then(json => {
-                    
                     let pokemon = {
                         id: json.id,
                         name: json.name,

@@ -8,10 +8,10 @@ function EstadoAHijo(props){
     )
 }
 
-//Necesita el metodo render 
-//y lo que renderice debe estar en un elemento
+//* Necesita el metodo render 
+//* y lo que renderice debe estar en un elemento
 
-//El estado puede ir definido en el contructor
+//* El estado puede ir definido en el contructor
 
 export default class Estado extends Component {
     // state={

@@ -5,7 +5,7 @@ function ElementoLista(props){
     return (
         <li>
             {/* rel="noreferrer" Evita que aparezca un WARNING de eslint*/}
-            <a href={props.propiedad.web} target="_blank" rel="noreferrer"> 
+            <a href={props.propiedad.web} target="_blank" rel="noreferrer">
                 {props.propiedad.name}
             </a>
         </li>

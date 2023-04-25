@@ -1,7 +1,7 @@
 import React from 'react';
 import '../helpers/miCss.css'
 
-// Inline Style
+//* Inline Style
 
 const estilo2 = {
     boxShadow: '0 5px 3px rgba(0,0,0,0.5)' 

@@ -1,16 +1,16 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 
 const HookUseRef = () => {
-    // en primera instancia este ref entrega un objeto que tendra la propiedad
-    // de current pero esta va a tener un valor nulo pero luego que le asignemos
-    // esta conta de referencia a nuestro elemento JSX podremos acceder a ese elemnto
-    // prodemos acceder las dimenciones acceder a focus etc.
+    //* en primera instancia este ref entrega un objeto que tendra la propiedad
+    //* de current pero esta va a tener un valor nulo pero luego que le asignemos
+    //* esta conta de referencia a nuestro elemento JSX podremos acceder a ese elemnto
+    //* prodemos acceder las dimenciones acceder a focus etc.
     const ref = useRef()
     const inputRef = useRef()
 
     const click = () => {
-        // a travez del useRef podemos accecer a los elemntos del DOM a su altura, a la posision de lo elementos, al foco
+        //* a travez del useRef podemos accecer a los elemntos del DOM a su altura, a la posision de lo elementos, al foco
         console.log(ref.current.clientHeight);
         ref.current.innerHTML = 'Puedo cambiar el texto con la ref.current'
     }

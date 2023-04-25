@@ -7,7 +7,7 @@ export class EventosES6 extends Component {
             contador:0
         }
 
-        //Realizo el bindeo o la union del this con las funciones sumar y restar de la clase.
+        //* Realizo el bindeo o la union del this con las funciones sumar y restar de la clase.
         this.sumar = this.sumar.bind(this)
         this.restar = this.restar.bind(this)
     }
@@ -37,14 +37,14 @@ export class EventosES6 extends Component {
     }
 }
 
-//Properties Initializer
+//* Properties Initializer
 export class EventosES7 extends Component {
-    //Estado
+    //* Estado
     state={
         contador:0
     } 
     
-    // Arrow functions para definir los eventos
+    //* Arrow functions para definir los eventos
     sumar = (e) => {
         this.setState({
             contador: this.state.contador + 1
@@ -78,7 +78,7 @@ function Boton(props) {
     )
 }
 
-//https://es.reactjs.org/docs/events.html
+//! https://es.reactjs.org/docs/events.html
 export class MasSobreEventos extends Component {
     handleClick = (e, mensaje) => {
         console.log(e);

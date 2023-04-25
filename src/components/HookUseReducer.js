@@ -2,10 +2,10 @@ import { useReducer, useState } from "react";
 
 // const state = { contador : 0 }
 
-// Debemos ocupar una funcion similar al metodo de reduce que recibe un acomulador y el elemento
+//* Debemos ocupar una funcion similar al metodo de reduce que recibe un acomulador y el elemento
 // const reducer = (acc, el) => {return newAcc}
 
-//Action siempre va a ser una propiedad string y otro parametro opcional payload que puede recibir lo que sea
+//* Action siempre va a ser una propiedad string y otro parametro opcional payload que puede recibir lo que sea
 // action = { type: string, payload: any } *
 
 const inicialState = { contador: 0 }

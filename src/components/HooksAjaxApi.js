@@ -45,7 +45,7 @@ export default function HooksAjaxApi (){
             json.results.forEach(async(poke) => {
                 let res = await fetch(poke.url),
                 json = await res.json()
-                
+
                 let pokemon = {
                     id: json.id,
                     name: json.name,
@@ -53,7 +53,7 @@ export default function HooksAjaxApi (){
                 }
                 setPokemons((pokemons) => [...pokemons, pokemon])
             })
-        
+
 
         }
 
