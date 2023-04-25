@@ -10,21 +10,23 @@ import {EventosES6, EventosES7, MasSobreEventos} from './components/Eventos';
 import {Padre} from './components/ComunicacionComponentes';
 import CicloVida from './components/CicloVidaComponentes';
 import AjaxApis from './components/PeticionAsincronicaAjaxApi';
-import HooksContador from './components/HooksUseStateContador';
-import HooksScroll from './components/HooksUseEfectScroll';
-import RelojHooks from './components/HooksReloj';
-import HooksAjaxApi from './components/HooksAjaxApi';
-import HooksPersonalizados from './components/HooksPersonalizados';
+import HooksContador from './components/HookExplicacion/HooksUseStateContador';
+import HooksScroll from './components/HookExplicacion/HooksUseEfectScroll';
+import RelojHooks from './components/HookExplicacion/HooksReloj';
+import HooksAjaxApi from './components/HookExplicacion/HooksAjaxApi';
+import HooksPersonalizados from './components/HookExplicacion/HooksPersonalizados';
 import Style from './components/PasandoStyles';
 import ReutilizandoComponentes from './components/ReutilizadoComponentes';
-import HookUseReducer from './components/HookUseReducer';
-import HookUseRef from './components/HookUseRef';
+import HookUseReducer from './components/HookExplicacion/HookUseReducer';
+import HookUseRef from './components/HookExplicacion/HookUseRef';
 import ComponenteNoControladosFrom from './components/FormularioGetDataNoControlado';
 import ComponenteNoControladosFrom2 from './components/FormularioGetDataNoControlado2';
 import ComponenteNoControladosFrom3 from './components/FormularioGetDataNoControlado3';
 import ComponentesControladosFrom from './components/FormularioGetDataControlados';
-import FormikUsandoHooks from './components/FormikUsandoHooks';
-import FormikUsandoComponentes from './components/FormikUsandoComponentes';
+import FormikUsandoHooks from './components/FormikExplicacion/FormikUsandoHooks';
+import FormikUsandoComponentes from './components/FormikExplicacion/FormikUsandoComponentes';
+import Styled from './components/StyledComponentExplicacion/Styled';
+
 
 function App() {
   return (
@@ -96,6 +98,8 @@ function App() {
           <FormikUsandoHooks/>
           <hr/>
           <FormikUsandoComponentes/>
+          <hr/>
+          <Styled/>
           <hr/>
         </section>
       </header>
