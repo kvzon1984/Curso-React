@@ -26,7 +26,7 @@ import ComponentesControladosFrom from './components/FormularioGetDataControlado
 import FormikUsandoHooks from './components/FormikExplicacion/FormikUsandoHooks';
 import FormikUsandoComponentes from './components/FormikExplicacion/FormikUsandoComponentes';
 import Styled from './components/StyledComponentExplicacion/Styled';
-import Content from './components/Content/Content';
+import Content from './components/Context/Context';
 
 
 function App() {
