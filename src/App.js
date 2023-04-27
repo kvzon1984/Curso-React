@@ -26,6 +26,7 @@ import ComponentesControladosFrom from './components/FormularioGetDataControlado
 import FormikUsandoHooks from './components/FormikExplicacion/FormikUsandoHooks';
 import FormikUsandoComponentes from './components/FormikExplicacion/FormikUsandoComponentes';
 import Styled from './components/StyledComponentExplicacion/Styled';
+import Content from './components/Content/Content';
 
 
 function App() {
@@ -100,6 +101,8 @@ function App() {
           <FormikUsandoComponentes/>
           <hr/>
           <Styled/>
+          <hr/>
+          <Content/>
           <hr/>
         </section>
       </header>
