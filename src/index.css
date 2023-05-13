@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+section .is-active {
+  font-weight: bold;
+  pointer-events: none;
+  color: cornflowerblue;
+}

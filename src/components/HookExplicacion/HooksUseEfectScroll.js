@@ -12,13 +12,12 @@ export default function HooksScroll(){
         window.addEventListener("scroll", detectarScroll)
 
         return () => window.removeEventListener("scroll", setScrollY)
-        
+
     },[scrollY])
 
     useEffect(() => {
         //! Al dejarlo vacio o no incuir el .[] useEffect solo se ejecuta en la etapa de montaje 
         console.log("Fase de Montaje");
-        
     },[])
 
     useEffect(() => {
@@ -26,16 +25,14 @@ export default function HooksScroll(){
         //! moutedDidUpdate cada vez que se renderiza ejecutara el codigo dentro de la funcion
 
         // console.log("Fase de Actualizacion");
-        
     })
 
     useEffect(() => {
         //! Al hacer que el useEffect retorne una funcion ( return () => {} ) le digo a React que lo que
         //! quiero es que se comporte com fase de desmontaje
         return () => {
-            console.log("Fase de Desmontaje"); 
+            console.log("Fase de Desmontaje");
         }
-        
     })
 
     return (
@@ -44,4 +41,4 @@ export default function HooksScroll(){
             <p> Scroll del navegador en {scrollY} px</p>
         </>
     )
-} 
+}

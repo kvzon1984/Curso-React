@@ -26,7 +26,15 @@ import ComponentesControladosFrom from './components/FormularioGetDataControlado
 import FormikUsandoHooks from './components/FormikExplicacion/FormikUsandoHooks';
 import FormikUsandoComponentes from './components/FormikExplicacion/FormikUsandoComponentes';
 import Styled from './components/StyledComponentExplicacion/Styled';
-import Content from './components/Context/Context';
+import Content from './components/Contexto/Context';
+import ActualizandoContext from './components/Contexto/ActualizandoContext';
+import ProblemaContext from './components/Contexto/Problemas';
+import UsarContextComponenteClase from './components/Contexto/Class-context';
+import ReactRouter from './components/ReactRouter/ReactRouter';
+import Redux from './components/Redux/Redux';
+import IncrementarDecrementarRedux from './components/Redux/IncrementarDecrementar';
+import IntegrandoReduxReact from './components/Redux/IntegrandoReduxAReact';
+import ListaTareasReduxReact from './components/Redux/ListaTareas';
 
 
 function App() {
@@ -103,6 +111,22 @@ function App() {
           <Styled/>
           <hr/>
           <Content/>
+          <hr/>
+          <ActualizandoContext/>
+          <hr/>
+          <ProblemaContext/>
+          <hr/>
+          <UsarContextComponenteClase/>
+          <hr/>
+          <ReactRouter/>
+          <hr/>
+          <Redux/>
+          <hr/>
+          <IncrementarDecrementarRedux/>
+          <hr/>
+          <IntegrandoReduxReact/>
+          <hr/>
+          <ListaTareasReduxReact/>
           <hr/>
         </section>
       </header>
